@@ -1,0 +1,244 @@
+
+body {
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-size: auto;
+    background-color: rgb(0, 0, 0);
+    height: 392px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+    background-attachment: fixed;
+}
+
+#container_inner { 
+    width: 1050px;
+    margin: 10px auto;
+    text-align: center;
+}
+.match-details-container {
+    height: 130px;
+}
+.match-details-container .match-summoner-details > div > div.match-summoner-details-players > div {
+    display: inline-flex;
+}
+.match-details-container .match-summoner-details > div > div.match-summoner-details-players > div > div {
+    overflow: inherit !important;
+    width: auto;
+    margin: 4px !important;
+}
+.match-details-icon-24 .hovertext, .match-details-icon-24 .hovertext-info {
+    display: none;
+}
+.match-details-icon-24:hover .hovertext, .match-details-icon-24:hover .hovertext-info {
+    display: block;
+    z-index:10000;
+}
+.hovertext {
+    position:absolute;
+    z-index:10000;
+    width:auto;
+    right: 10px;
+    top: 5px;
+    color: #FFCD03;
+    text-decoration: none;
+    outline: 0;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0 3px;
+    border-radius: 5px;
+    overflow: initial;
+}
+.hovertext-info {
+    position:absolute;
+    z-index:10000;
+    width:auto;
+    left: 40px;
+    color: #FFCD03;
+    text-decoration: none;
+    outline: 0;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0 3px;
+    border-radius: 5px;
+    overflow: initial;
+}
+.match-summoner-details-champion {
+    padding: 0 10px;
+    width: 100px;
+}
+.match-summoner-details-players {
+    width: 80px;
+    padding: 0 10px;
+    top: -2px;
+    position: relative;
+}
+.match-details-cell {
+    width: 860px;
+    margin: 2px auto;
+    position: relative;
+}
+.match-details-cell-pentakill{
+    width: 860px;
+    margin: 2px auto;
+    position: relative;
+    border: 1px solid #FFD700;
+}
+.match-details-cell-header {
+    width: 30px;
+    height: 120px;
+     float: left;
+}  
+.match-details-cell-header > div {
+    width: auto !important;
+} 
+.match-details-cell-header > div > div {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    width: 130px;
+    position: relative;
+}
+.match-details-cell-header > div > div:first-child {
+    font: bold 13px 'Open Sans';
+    top: 50px;
+    left: -55px;
+}        
+.match-details-cell-header > div > div:last-child {
+    top: 40px;
+    left: -40px;
+}
+.match-details-cell .match-summoner-background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.match-info {
+  text-shadow: 0 0 1px #000;
+  z-index: 20;
+  border-left: 1px none;
+  position: relative;
+  float: left;
+}
+
+.match_details_cell-trinket > div {
+    vertical-align: middle;
+    white-space: normal;
+    float: left;
+    margin-bottom: 0px !important;
+    padding: 0 3px;
+}
+
+.match_details_cell-trinket > div > div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font: 14px/24px 'Open Sans';
+    color: #FFCD03;
+    margin: 2px;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.match_details_cell-trinket > div > div > .match-details-icon-24 {
+    position: relative;
+}
+
+.match-summoner-details-players .match-team {
+    border: 1px solid;
+    border-radius: 10px;
+    padding-right: 5px;
+    margin-bottom: 3px;
+}
+
+.match_details_cell-stats > div {
+    text-align: left;
+    display: inline;
+}
+
+.match-details-container .match-summoner-details > div > div .match_details_cell-stats > div > div {
+    float: left;
+    width: 20px;
+    text-align: right;
+}
+
+.match-details-container .match-summoner-details > div > div .match_details_cell-stats > div span {
+    line-height: 20px;
+    float: left;
+    width: 55px;
+    height: 17px;
+    padding-left: 5px;
+}
+
+.match-ip-earned {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    color: #FFDB4C;
+}
+
+.search-container {
+    width: 900px;
+    height: 168px;
+    margin: 0 auto;
+    position: relative;
+    background: transparent url("../images/header-bg.png") no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+}
+
+.suggestive-search-container {
+    width: 320px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -35px;
+    left: 280px;
+}
+
+.result-container {
+    width: 860px;
+    margin: 40px auto 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 5px #000000;
+}
+
+.suggestive-search-container form input[type="text"] {
+    width: 230px;
+    height: 30px;
+    font: 17px/17px 'Open Sans';
+    color: #255fa7;
+}
+
+.suggestive-search-container form {
+    height: 30px;
+}
+
+ul.tester li {
+    font: 17px/22px 'Open Sans';
+}
+
+#result-search {
+    margin: 50px auto;
+}
+
+#result-search #image-loader {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../images/ajax-loader.gif") center no-repeat;
+}

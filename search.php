@@ -52,7 +52,7 @@ $maps = array(1 => "Summoner's Rift",2 => "Summoner's Rift",3 => "The Proving Gr
                         $mapNameUrl = strtolower(str_replace(' ', '-', str_replace("'", '', $mapName)));
                         $mapNameUrl = ($match[mapId] == 4 || $match[mapId] == 10) ? "the-".$mapNameUrl : $mapNameUrl;
                         ?>
-                        <div class=<?php echo ($match[stats][pentaKills]) ? '"match-details-cell-pentakill"' : '"match-details-cell"'?> data-id=<?php echo '"'.$match[gameId].'"'; ?>>
+                        <div class=<?php echo ($match[stats][pentaKills]) ? '"match-details-cell-pentakill"' : '"match-details-cell-pentakill"'?> data-id=<?php echo '"'.$match[gameId].'"'; ?>>
                             <div class="match-summoner-background" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/images/champion_headers/'.$match[championId].'_0.jpg)";'; ?>>
                             </div>
                             <div class="match-info">

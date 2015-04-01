@@ -12,7 +12,7 @@ function searchChampionForId($id, $array) {
 }
 
 $maps = array(1 => "Summoner's Rift",2 => "Summoner's Rift",3 => "The Proving Grounds",4 => "Twisted Treeline",8 => "The Crystal Scar",10 => "Twisted Treeline",12 => "Howling Abyss");
-
+$subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" => "ARAM", "ONEFORALL_5x5" => "ONE FOR ALL", "FIRSTBLOOD_1x1", => "FIRSTBLOOD", "FIRSTBLOOD_2x2", => "FIRSTBLOOD 2x2", "SR_6x6" => "HEXAKILL", "URF" => "URF", "NIGHTMARE_BOT", => "NIGHTMARE BOT", "ASCENSION" => "ASCENSION", "HEXAKILL" => "HEXAKILL", "KING_PORO" => "KING PORO", "COUNTER_PICK" => "NEMESIS");
 ?>
 
 <div class="result-container">
@@ -48,7 +48,8 @@ $maps = array(1 => "Summoner's Rift",2 => "Summoner's Rift",3 => "The Proving Gr
 
                     foreach($result[games] as $match)
                     {        
-                        $mapName = $maps[$match[mapId]];
+                        $mapName = $subTypes[$match[subType]];
+                        #deprecated
                         $mapNameUrl = strtolower(str_replace(' ', '-', str_replace("'", '', $mapName)));
                         $mapNameUrl = ($match[mapId] == 4 || $match[mapId] == 10) ? "the-".$mapNameUrl : $mapNameUrl;
                         ?>
@@ -64,7 +65,7 @@ $maps = array(1 => "Summoner's Rift",2 => "Summoner's Rift",3 => "The Proving Gr
                                 }
                                 ?>>
                                 <div>
-                                    <div><a href=<?php echo '"http://gameinfo.las.leagueoflegends.com/es/game-info/game-modes/'.$mapNameUrl.'"'; ?> target="_blank"><?php echo $mapName; ?></a></div>
+                                    <div><!--a href=?php echo '"http://gameinfo.las.leagueoflegends.com/es/game-info/game-modes/'.$mapNameUrl.'"'; ?> target="_blank"--><?php echo $mapName; ?><!--/a--></div>
                                     <div><?php echo round($match[stats][timePlayed]/60); ?> Minutos</div>
                                 </div>
                             </div>

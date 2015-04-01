@@ -50,8 +50,9 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                     {        
                         $mapName = $subTypes[$match[subType]];
                         //deprecated
-                        $mapNameUrl = strtolower(str_replace(' ', '-', str_replace("'", '', $mapName)));
-                        $mapNameUrl = ($match[mapId] == 4 || $match[mapId] == 10) ? "the-".$mapNameUrl : $mapNameUrl;
+                        //$mapNameUrl = strtolower(str_replace(' ', '-', str_replace("'", '', $mapName)));
+                        //$mapNameUrl = ($match[mapId] == 4 || $match[mapId] == 10) ? "the-".$mapNameUrl : $mapNameUrl;
+                        //
                         ?>
                         <div class=<?php echo ($match[stats][pentaKills]) ? '"match-details-cell-pentakill"' : '"match-details-cell"'?> data-id=<?php echo '"'.$match[gameId].'"'; ?>>
                             <div class="match-summoner-background" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/images/champion_headers/'.$match[championId].'_0.jpg)";'; ?>>
@@ -65,7 +66,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                 }
                                 ?>>
                                 <div>
-                                    <div><!--a href=?php echo '"http://gameinfo.las.leagueoflegends.com/es/game-info/game-modes/'.$mapNameUrl.'"'; ?> target="_blank"--><?php echo $mapName; ?><!--/a--></div>
+                                    <div><?php echo $mapName; ?></div>
                                     <div><?php echo round($match[stats][timePlayed]/60); ?> Minutos</div>
                                 </div>
                             </div>

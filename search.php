@@ -49,7 +49,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                     foreach($result[games] as $match)
                     {        
                         $mapName = $subTypes[$match[subType]];
-                        #deprecated
+                        //deprecated
                         $mapNameUrl = strtolower(str_replace(' ', '-', str_replace("'", '', $mapName)));
                         $mapNameUrl = ($match[mapId] == 4 || $match[mapId] == 10) ? "the-".$mapNameUrl : $mapNameUrl;
                         ?>

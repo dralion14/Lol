@@ -12,7 +12,7 @@ function searchChampionForId($id, $array) {
 }
 
 $maps = array(1 => "Summoner's Rift",2 => "Summoner's Rift",3 => "The Proving Grounds",4 => "Twisted Treeline",8 => "The Crystal Scar",10 => "Twisted Treeline",12 => "Howling Abyss");
-$subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" => "ARAM", "ONEFORALL_5x5" => "ONE FOR ALL", "FIRSTBLOOD_1x1", => "FIRSTBLOOD", "FIRSTBLOOD_2x2", => "FIRSTBLOOD 2x2", "SR_6x6" => "HEXAKILL", "URF" => "URF", "NIGHTMARE_BOT", => "NIGHTMARE BOT", "ASCENSION" => "ASCENSION", "HEXAKILL" => "HEXAKILL", "KING_PORO" => "KING PORO", "COUNTER_PICK" => "NEMESIS");
+$subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" => "ARAM", "ONEFORALL_5x5" => "ONE FOR ALL", "FIRSTBLOOD_1x1" => "FIRSTBLOOD", "FIRSTBLOOD_2x2" => "FIRSTBLOOD 2x2", "SR_6x6" => "HEXAKILL", "URF" => "URF", "NIGHTMARE_BOT" => "NIGHTMARE BOT", "ASCENSION" => "ASCENSION", "HEXAKILL" => "HEXAKILL", "KING_PORO" => "KING PORO", "COUNTER_PICK" => "NEMESIS");
 ?>
 
 <div class="result-container">

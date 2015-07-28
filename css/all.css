@@ -24,7 +24,7 @@ body {
 .match-details-container .match-summoner-details > div > div.match-summoner-details-players > div > div {
     overflow: inherit !important;
     width: auto;
-    margin: 4px !important;
+    margin: 2px !important;
 }
 .match-details-icon-24 .hovertext, .match-details-icon-24 .hovertext-info {
     display: none;

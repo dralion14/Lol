@@ -97,9 +97,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                 //$name = $champ->name;
                                                 //$championName = searchChampionForId(strval($match[championId]), $champions);
                                                 ?>
-                                                <a href=<?php echo '"//www.lolking.net/champions/'.$champ->name.'"'; ?> title=<?php echo '"//www.lolking.net/champions/'.$champ->title.'"'; ?> target="_blank">
-                                                    <?php echo $champ->name; ?>
-                                                </a>
+                                                <a href="<?php echo '//www.lolking.net/champions/'.strtolower($champ->key); ?>" title="<?php echo $champ->title; ?>" target="_blank"><?php echo $champ->name; ?></a>
                                             </div>                                    
                                         </div>
                                     </div>

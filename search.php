@@ -302,7 +302,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                         <div class="match-team" style=<?php echo '"border-color: '.$team1.';"'; ?>>
                                             <div>
                                                 <a href=<?php echo '"//www.lolking.net/summoner/las/'.$summonerId.'" target="_blank"'; ?>>
-                                                    <div class="match-details-icon-24" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size32x32/'.$value.'.png);"'; ?>><span class="hovertext"><?php echo $name; ?></span></div></a>
+                                                    <div class="match-details-icon-24" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size32x32/'.$match[championId].'.png);"'; ?>><span class="hovertext"><?php echo $name; ?></span></div></a>
                                                 </div>
                                                 <?php
                                                 $com = array();

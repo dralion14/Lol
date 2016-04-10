@@ -87,7 +87,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                 ?>>
                                 <div>
                                     <div class="match-summoner-details-champion">
-                                        <div class="match-details-icon-100" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size64x64/'.$match[championId].'.png);"'; ?>>
+                                        <div class="match-details-icon-100" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size100x100/'.$match[championId].'.png);"'; ?>>
                                             <div>
                                                 <?php 
                                                 //$url = "https://prod.api.pvp.net/api/lol/static-data/las/v1.2/champion/".$match[championId]."?locale=es_ES&api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698";
@@ -302,7 +302,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                         <div class="match-team" style=<?php echo '"border-color: '.$team1.';"'; ?>>
                                             <div>
                                                 <a href=<?php echo '"//www.lolking.net/summoner/las/'.$summonerId.'" target="_blank"'; ?>>
-                                                    <div class="match-details-icon-24" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/champions/'.$match[championId].'_32.png);"'; ?>><span class="hovertext"><?php echo $name; ?></span></div></a>
+                                                    <div class="match-details-icon-24" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size32x32/'.$value.'.png);"'; ?>><span class="hovertext"><?php echo $name; ?></span></div></a>
                                                 </div>
                                                 <?php
                                                 $com = array();
@@ -324,7 +324,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                     ?>
                                                     <div>
                                                         <a href=<?php echo '"//www.lolking.net/summoner/las/'.$key.'" target="_blank"'; ?>>
-                                                            <div class="match-details-icon-24" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/champions/'.$value.'_32.png);"'; ?>><span class="hovertext"><?php echo $playersNames->$key; ?></span></div></a>
+                                                            <div class="match-details-icon-24" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size32x32/'.$value.'.png);"'; ?>><span class="hovertext"><?php echo $playersNames->$key; ?></span></div></a>
                                                         </div>
                                                         <?php
                                                     }
@@ -336,7 +336,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                         ?>
                                                         <div>
                                                             <a href=<?php echo '"//www.lolking.net/summoner/las/'.$key.'" target="_blank"'; ?>>
-                                                                <div class="match-details-icon-24" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/champions/'.$value.'_32.png);"'; ?>><span class="hovertext"><?php echo $playersNames->$key; ?></span></div></a>
+                                                                <div class="match-details-icon-24" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size32x32/'.$value.'.png);"'; ?>><span class="hovertext"><?php echo $playersNames->$key; ?></span></div></a>
                                                             </div>
                                                             <?php
                                                         }

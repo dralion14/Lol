@@ -21,6 +21,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                     $base_url = "https://las.api.pvp.net";
                     $api_key = "?api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698";
                     $url = $base_url."/api/lol/las/v1.4/summoner/by-name/".$name.$api_key;
+                    $base_img = '//lkimg.zamimg.com/images/v2/';
 
                     //  Initiate curl
                     $ch = curl_init();
@@ -86,7 +87,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                 ?>>
                                 <div>
                                     <div class="match-summoner-details-champion">
-                                        <div class="match-details-icon-100" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/champions/'.$match[championId].'.png);"'; ?>>
+                                        <div class="match-details-icon-100" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size64x64/'.$match[championId].'.png);"'; ?>>
                                             <div>
                                                 <?php 
                                                 //$url = "https://prod.api.pvp.net/api/lol/static-data/las/v1.2/champion/".$match[championId]."?locale=es_ES&api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698";
@@ -141,7 +142,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item0];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php
@@ -153,7 +154,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item1];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php
@@ -165,7 +166,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item2];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php
@@ -179,7 +180,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item3];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php
@@ -191,7 +192,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item4];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php
@@ -203,7 +204,7 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                                             $item = $match[stats][item5];
                                                             if($item){
                                                                 ?>
-                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url(//lkimg.zamimg.com/shared/riot/images/items/'.$item.'_32.png)";'; ?>>
+                                                                <div class="match-details-icon-32" style=<?php echo '"background-image: url('.$base_img.'items/icons/size32x32/'.$item.'.png)";'; ?>>
                                                                     <a href=<?php echo '"http://www.lolking.net/items/'.$item.'" target="_blank"'; ?>></a>
                                                                 </div>
                                                                 <?php

@@ -46,6 +46,8 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                     curl_setopt($ch, CURLOPT_URL,$url);
                         // Execute
                     $result=json_decode(curl_exec($ch), true);
+                    
+                    https://global.api.pvp.net/api/lol/static-data/las/v1.2/champion/136?api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698
 
                     foreach($result[games] as $match)
                     {        
@@ -90,12 +92,13 @@ $subTypes = array("NONE" => "CUSTOM", "NORMAL" => "NORMAL", "ARAM_UNRANKED_5x5" 
                                         <div class="match-details-icon-100" style=<?php echo '"background-image: url('.$base_img.'champions/icons/size100x100/'.$match[championId].'.png);"'; ?>>
                                             <div>
                                                 <?php 
-                                                //$url = "https://prod.api.pvp.net/api/lol/static-data/las/v1.2/champion/".$match[championId]."?locale=es_ES&api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698";
-                                                //$name = json_decode(file_get_contents($url))->name;
-                                                $championName = searchChampionForId(strval($match[championId]), $champions);
+                                                $url2 = "https://global.api.pvp.net/api/lol/static-data/las/v1.2/champion/".$match[championId]."?api_key=860ee30e-9e60-47bd-bf8e-3c9d07a17698";
+                                                $champ = json_decode(file_get_contents($url2));
+                                                //$name = $champ->name;
+                                                //$championName = searchChampionForId(strval($match[championId]), $champions);
                                                 ?>
-                                                <a href=<?php echo '"//www.lolking.net/champions/'.$championName.'"'; ?> target="_blank">
-                                                    <?php echo $championName; ?>
+                                                <a href=<?php echo '"//www.lolking.net/champions/'.$champ->name.'"'; ?> title=<?php echo '"//www.lolking.net/champions/'.$champ->title.'"'; ?> target="_blank">
+                                                    <?php echo $champ->name; ?>
                                                 </a>
                                             </div>                                    
                                         </div>
